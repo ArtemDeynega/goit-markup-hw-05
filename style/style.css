@@ -234,6 +234,7 @@ img {
 .address-tel:focus,
 .address-tel:hover {
       color: var(--accent-color);
+      transition: color var(--transition-duration250) var(--timing-function);
 }
 
 .site-nav .site-nav-link.current {
@@ -470,11 +471,13 @@ img {
 .comands-link-item:focus,
 .comands-link-item:hover {
       background-color: var(--accent-color);
+      transition: background-color var(--timing-function) var(--transition-duration250);
       
 }
 .comands-link-item:focus .command-social-icon,
 .comands-link-item:hover .command-social-icon {
       fill: var(--primary-white-color);
+      transition: fill var(--timing-function) var(--transition-duration250);
 }
 .command-social-icon {
       fill: var(--border-clients-color);
@@ -683,6 +686,7 @@ img {
 .social-link:focus,
 .social-link:hover {
       background-color: var(--accent-color);
+      transition: background-color var(--transition-duration250) var(--timing-function);
 }
 .social-link-title {
       margin: 0;
@@ -770,18 +774,9 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
 }
-/* .portfolio-thumb::before {
-      display: inline-block;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--product-action-color);
 
-} */
 .product-actions {
       position: absolute;
       width: 100%;
@@ -792,17 +787,23 @@ img {
       padding: 64px 24px;
       
       
+      
       background-color: var(--product-action-color);
       color: var(--product-text-action);
      
-      opacity: 0;
-      transition: var(--transition-duration250) opacity var(--timing-function);
+
       
+      transform: translateY(100%);
+      
+      transition: transform var(--timing-function) var(--transition-duration250);
+     
      
 }
-.product-actions:hover,
-.product-actions:focus {
-      opacity: 1;
+.proect-list:hover .product-actions,
+.proect-list:focus .product-actions
+      {
+      transform: translateY(0);
+      /* transform: translateY(100%); */
 }
 .product-text {
       margin: 0;
