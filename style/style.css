@@ -803,7 +803,7 @@ img {
 .proect-list:focus .product-actions
       {
       transform: translateY(0);
-      /* transform: translateY(100%); */
+      
 }
 .product-text {
       margin: 0;
