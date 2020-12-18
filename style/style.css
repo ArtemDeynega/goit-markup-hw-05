@@ -833,13 +833,14 @@ img {
 
 
 }
-.proect-list:hover 
-.proect-list:focus {
+
+
+.porfolio-link:hover,
+.porfolio-link:focus  {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    
+
 }
 .portfolio-thumb {
       position: relative;
@@ -870,8 +871,8 @@ img {
      
      
 }
-.proect-list:hover .product-actions,
-.proect-list:focus .product-actions
+.porfolio-link:hover .product-actions,
+.porfolio-link:focus .product-actions
       {
       transform: translateY(0);
       
