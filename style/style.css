@@ -210,9 +210,21 @@ img {
       color: var(--accent-color);
 }
 
-
 .address-mail,
-.address-tel,
+.address-tel {
+      display: inline-block;
+      padding-bottom: 32px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      
+
+      color: var(--adress-icon);
+}
+
 .site-nav-link {
       display: inline-block;
       padding-bottom: 32px;
@@ -605,9 +617,7 @@ img {
       border-radius: 4px;
       padding: 6px 22px;
       margin: 8px;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
+      
       border: 1px solid transparent;
       cursor: pointer;
       
@@ -627,8 +637,12 @@ img {
       {
       background-color: var(--accent-color);
       color: var(--secondary-background-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
       transition: background-color var(--transition-duration250) var(--timing-function),
-      color var(--transition-duration250) var(--timing-function);
+      color var(--transition-duration250) var(--timing-function),
+      box-shadow var(--transition-duration250) var(--timing-function);
       
 
 }
@@ -819,7 +833,7 @@ img {
 
 
 }
-.proect-list:hover,
+.proect-list:hover 
 .proect-list:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
