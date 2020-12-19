@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -18,10 +19,12 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style/modal.css">
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="body">
@@ -74,7 +77,21 @@
             Эффективные решения <br> для вашего бизнеса
           </h1>
           </div>
-          <button type="button" class="btn-primary">Заказать услугу</button>
+          <button type="button" class="btn-primary" data-modal-open>
+      Заказать услугу
+    </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio
+          harum officia, dolorem natus labore optio sequi voluptatibus tenetur
+          velit obcaecati. Quae nihil repudiandae magnam impedit molestiae,
+          doloribus, quasi distinctio commodi minima eum magni dicta voluptates
+          fuga maiores accusamus facilis?
+        </p>
+        <button data-modal-close>Закрыть</button>
+      </div>
+    </div>
           
           </div>
          
@@ -404,7 +421,9 @@
         </div>
       </div>
     </footer>
-    
+
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 

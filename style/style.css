@@ -33,6 +33,12 @@ html {
       --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
       --transition-duration250: 250ms;
       --background-color-aside: rgba(47, 48, 58, 0.8);
+      --shadow-portfolio-products: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      --shadow-btn-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
       
 }
 
@@ -319,6 +325,7 @@ img {
 
       color: var(--secondary-background-color);
 
+      
 }
 
 
@@ -601,6 +608,8 @@ img {
       border-radius: 4px;
       border: inherit;
 
+      
+
 
 
 }
@@ -637,9 +646,7 @@ img {
       {
       background-color: var(--accent-color);
       color: var(--secondary-background-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-      0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: var(--shadow-btn-portfolio);
       transition: background-color var(--transition-duration250) var(--timing-function),
       color var(--transition-duration250) var(--timing-function),
       box-shadow var(--transition-duration250) var(--timing-function);
@@ -848,9 +855,7 @@ img {
 .porfolio-link:hover,
 .porfolio-link:focus {
       display: block;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-portfolio-products) ;
     transition: box-shadow var(--timing-function) var(--transition-duration250);
 
 }
@@ -911,3 +916,6 @@ padding: 15px;
 margin: 20px;
 
 /* ------------------ */
+
+
+
